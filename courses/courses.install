@@ -1,0 +1,17 @@
+
+<?php
+
+/**
+ * @file
+ * Courses module install file.
+ */
+
+/**
+ * Creates the Course entity type.
+ */
+function courses_update_9000(&$sandbox) {
+  \Drupal::entityTypeManager()->clearCachedDefinitions();
+
+  $entity_type = \Drupal::entityTypeManager()->getDefinition('course');
+  \Drupal::entityDefinitionUpdateManager()->installEntityType($entity_type);
+}

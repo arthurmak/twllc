@@ -1,0 +1,7 @@
+services:
+
+  freehk_world.redirect_subscriber:
+    class: \Drupal\freehk_world\EventSubscriber\FreehkWorldRedirectSubscriber
+    arguments: ['@current_user', '@current_route_match']
+    tags:
+      - { name: event_subscriber }

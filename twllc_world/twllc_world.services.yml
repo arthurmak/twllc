@@ -1,0 +1,17 @@
+services:
+  twllc_world.salutation:
+    class: Drupal\twllc_world\TwllcWorldSalutation
+    arguments: ['@config.factory', '@event_dispatcher']
+  twllc_world.redirect_subscriber:
+    class: \Drupal\twllc_world\EventSubscriber\TwllcWorldRedirectSubscriber
+    arguments: ['@current_user', '@current_route_match']
+    tags:
+      - { name: event_subscriber }
+  twllc_world.logger.channel.twllc_world:
+    parent: logger.channel_base
+    arguments: ['twllc_world']
+  twllc_world.logger.mail_logger:
+    class: Drupal\twllc_world\Logger\MailLogger
+    arguments: ['@logger.log_message_parser', '@config.factory']
+    tags:
+      - { name: logger }

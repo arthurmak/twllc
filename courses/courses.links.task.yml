@@ -1,0 +1,15 @@
+entity.course.canonical:
+  route_name: entity.course.canonical
+  base_route: entity.course.canonical
+  title: 'View'
+
+entity.course.edit_form:
+  route_name: entity.course.edit_form
+  base_route: entity.course.canonical
+  title: 'Edit'
+
+entity.course.delete_form:
+  route_name: entity.course.delete_form
+  base_route: entity.course.canonical
+  title: Delete
+  weight: 10

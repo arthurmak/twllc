@@ -1,0 +1,23 @@
+twllc_world.hello:
+  path: '/hello'
+  defaults:
+    _controller: Drupal\twllc_world\Controller\TwllcWorldController::twllcWorld
+    _title: 'Our first route'
+  requirements:
+    _permission: 'access content'
+    
+twllc_world.greeting_form:
+  path: '/admin/config/salutation-configuration'
+  defaults:
+    _form: Drupal\twllc_world\Form\SalutationConfigurationForm
+    _title: 'Salutation configuration'
+  requirements:
+    _permission: 'administer site configuration'
+    
+twllc_world.course:
+  path: 'course'
+  defaults:
+    _controller: Drupal\twllc_world\Controller\TwllcWorldController::course
+    _title: 'Course List'
+  requirements:
+    _permission: 'access content'

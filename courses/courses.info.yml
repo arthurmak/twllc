@@ -1,0 +1,5 @@
+name: Courses
+description: A module that stores Course information imported from various sources
+package: Awesome modules
+core_version_requirement: ^9
+type: module

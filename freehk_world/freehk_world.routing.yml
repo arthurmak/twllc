@@ -1,0 +1,55 @@
+freehk_world.freehk:
+  path: '/freehk'
+  defaults:
+    _controller: Drupal\freehk_world\Controller\FreehkWorldController::freehkWorld
+    _title: 'Free HK first route'
+  requirements:
+    _permission: 'access content'
+    
+freehk_world.greeting_form:
+  path: '/admin/config/salutation-configuration'
+  defaults:
+    _form: Drupal\twllc_world\Form\SalutationConfigurationForm
+    _title: 'Salutation configuration'
+  requirements:
+    _permission: 'administer site configuration'
+    
+freehk_world.course:
+  path: '/course'
+  defaults:
+    _controller: Drupal\twllc_world\Controller\TwllcWorldController::course
+    _title: 'Path: freehk_world.course'
+  requirements:
+    _permission: 'access content'    
+
+freehk_world.gold:
+  path: '/gold'
+  defaults:
+    _controller: Drupal\freehk_world\Controller\FreehkWorldController::gold
+    _title: 'Path: freehk_world.gold'
+  requirements:
+    _permission: 'access content'
+    
+freehk_world.silver:
+  path: '/silver'
+  defaults:
+    _controller: Drupal\freehk_world\Controller\FreehkWorldController::silver
+    _title: 'Path: freehk_world.silver'
+  requirements:
+    _permission: 'access content'
+    
+freehk_world.bronze:
+  path: '/bronze'
+  defaults:
+    _controller: Drupal\freehk_world\Controller\FreehkWorldController::bronze
+    _title: 'Path: freehk_world.bronze'
+  requirements:
+    _permission: 'access content'
+    
+freehk_world.opencontent:
+  path: '/opencontent'
+  defaults:
+    _controller: Drupal\freehk_world\Controller\FreehkWorldController::opencontent
+    _title: 'Path: freehk_world.opencontent'
+  requirements:
+    _permission: 'access content'    

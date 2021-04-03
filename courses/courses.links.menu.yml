@@ -1,0 +1,6 @@
+entity.course.collection:
+  title: 'Course list'
+  route_name: entity.course.collection
+  description: 'List Course entities'
+  parent: system.admin_structure
+  weight: 100

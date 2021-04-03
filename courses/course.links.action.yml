@@ -1,0 +1,11 @@
+entity.course.add_page:
+  route_name: entity.course.add_page
+  title: 'Add Course'
+  appears_on:
+    - entity.course.collection
+
+entity.course_type.add_form:
+  route_name: 'entity.course_type.add_form'
+  title: 'Add Product type'
+  appears_on:
+    - entity.course_type.collection
